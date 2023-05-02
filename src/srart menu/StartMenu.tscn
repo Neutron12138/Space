@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://cdwg05f03m3lm"]
+
+[ext_resource type="Script" path="res://src/srart menu/StartMenu.gd" id="1_8tn4c"]
+
+[node name="Start Menu" type="Node"]
+script = ExtResource("1_8tn4c")
+
+[node name="HUD" type="CanvasLayer" parent="."]
