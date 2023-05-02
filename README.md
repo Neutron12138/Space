@@ -1,6 +1,6 @@
 # Space
 
-用Godot做的一个2D太空游戏
+用OpenGL做的一个2D太空游戏
 
 ## 简介
 
