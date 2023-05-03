@@ -14,3 +14,13 @@ config/name="Space"
 run/main_scene="res://src/Game.tscn"
 config/features=PackedStringArray("4.0", "Forward Plus")
 config/icon="res://icon.svg"
+
+[display]
+
+window/size/viewport_width=1200
+window/size/viewport_height=640
+window/size/resizable=false
+
+[rendering]
+
+renderer/rendering_method="mobile"
