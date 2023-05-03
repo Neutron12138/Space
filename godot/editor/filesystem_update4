@@ -1,8 +1,4 @@
-res://src/Game.tscn
-res://src/Game.gd
-res://src/Scene.tscn
-res://src/Scene.gd
+res://src/starry background/StarryBackground.tscn
 res://src/srart menu/StartMenu.tscn
 res://src/srart menu/StartMenu.gd
-res://src/playing scene/PlayingScene.tscn
-res://src/playing scene/PlayingScene.gd
+res://src/starry background/StarryBackground.gd
