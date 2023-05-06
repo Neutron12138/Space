@@ -1,41 +1,56 @@
 extends Node2D
 
-@export var size : Vector2i
-@export var count : int
+@export var size : Vector2i = Vector2i(1200,640)
+@export var count : int = 120
+@export var star_color : Color = Color.LIGHT_YELLOW
+@export var background_color : Color = Color.DARK_BLUE
 
-var m_stars_pos = []
+var m_image : Image
+var m_texture : ImageTexture
 
 func _ready() -> void:
-	for i in range(count):
-		m_stars_pos.append(
-			Vector2(
-				randi_range(0,size.x),
-				randi_range(0,size.y)
-			)
-		)
+	m_image = create_bg()
+	m_texture = ImageTexture.create_from_image(m_image)
+	$background0.texture = m_texture
+	$background1.texture = m_texture
+	$background2.texture = m_texture
+	$background3.texture = m_texture
 
-func _draw() -> void:
-	draw_rect(
-		Rect2(0,0,size.x,size.y),
-		Color.PURPLE
+func move(direction : Vector2) -> void:
+	pass
+	
+func create_bg() -> Image:
+	var data = PackedByteArray()
+	
+	var stars_xpos = []
+	var stars_ypos = []
+	
+	for i in range(count):
+		stars_xpos.append(randi_range(0,size.x))
+		stars_ypos.append(randi_range(0,size.y))
+	
+	for y in range(size.y):
+		for x in range(size.x):
+			if x in stars_xpos and y in stars_ypos:
+				data.append_array(
+					color_to_bytes(star_color)
+				)
+			else:
+				data.append_array(
+					color_to_bytes(background_color)
+				)
+	
+	return Image.create_from_data(
+		size.x,
+		size.y,
+		false,
+		Image.FORMAT_RGB8,
+		data
 	)
 	
-	for i in m_stars_pos:
-		draw_circle(
-			i,
-			1,
-			Color.YELLOW
-		)
-		
-func move(direction : Vector2) -> void:
-	for i in m_stars_pos:
-		i += direction
-		i = cut(i)
-	queue_redraw()
-	
-func cut(vec : Vector2) -> Vector2:
-	var x = ((vec.x / size.x) as int) * (size.x as float)
-	var y = ((vec.y / size.y) as int) * (size.y as float)
-	vec.x -= x
-	vec.y -= y
-	return vec
+func color_to_bytes(color : Color) -> PackedByteArray:
+	var result = PackedByteArray()
+	result.append(color.r8)
+	result.append(color.g8)
+	result.append(color.b8)
+	return result
