@@ -1,5 +1,5 @@
 2a60927148abd1d33b818b535e306557
-::res://::1683078288
+::res://::1683369674
 icon.svg::CompressedTexture2D::2479762046883698020::1683025634::1683025642::1::::<><>::
 ::res://bin/::1683029342
 ::res://src/::1683076764
@@ -12,9 +12,9 @@ GameMenu.tscn::PackedScene::188310893913659474::1683025909::0::1::::<><>::
 ::res://src/playing scene/::1683027188
 PlayingScene.gd::GDScript::-1::1683027188::0::1::::<>Scene<>::
 PlayingScene.tscn::PackedScene::3107748768729471763::1683027140::0::1::::<><>::res://src/playing scene/PlayingScene.gd
-::res://src/srart menu/::1683078282
-StartMenu.gd::GDScript::-1::1683078261::0::1::::<>Scene<>::
-StartMenu.tscn::PackedScene::5029234740292169330::1683078282::0::1::::<><>::res://src/srart menu/StartMenu.gd<>uid://baundevtepdit
-::res://src/starry background/::1683078282
-StarryBackground.gd::GDScript::-1::1683078146::0::1::::<>Node2D<>::
-StarryBackground.tscn::PackedScene::2428503160465480327::1683078282::0::1::::<><>::res://src/starry background/StarryBackground.gd
+::res://src/srart menu/::1683369267
+StartMenu.gd::GDScript::-1::1683369267::0::1::::<>Scene<>::
+StartMenu.tscn::PackedScene::5029234740292169330::1683369250::0::1::::<><>::res://src/srart menu/StartMenu.gd<>uid://baundevtepdit
+::res://src/starry background/::1683369578
+StarryBackground.gd::GDScript::-1::1683369578::0::1::::<>Node2D<>::
+StarryBackground.tscn::PackedScene::2428503160465480327::1683369578::0::1::::<><>::res://src/starry background/StarryBackground.gd
