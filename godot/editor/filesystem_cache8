@@ -1,20 +1,19 @@
 2a60927148abd1d33b818b535e306557
-::res://::1683369674
+::res://::1683900945
 icon.svg::CompressedTexture2D::2479762046883698020::1683025634::1683025642::1::::<><>::
 ::res://bin/::1683029342
-::res://src/::1683076764
+::res://src/::1683900942
 Game.gd::GDScript::-1::1683027216::0::1::::<>Node<>::
-Game.tscn::PackedScene::1624543876560140158::1683027217::0::1::::<><>::res://src/Game.gd<>uid://cdwg05f03m3lm<>uid://bkjofyn45rgqt
+Game.tscn::PackedScene::-1::1683900897::0::1::::<><>::res://src/Game.gd<>res://src/interface/StartMenu.tscn<>res://src/interface/PlayingScene.tscn
 Scene.gd::GDScript::-1::1683027102::0::1::::Scene<>Node<>::
 Scene.tscn::PackedScene::2259318819081428524::1683026943::0::1::::<><>::res://src/Scene.gd
-::res://src/game menu/::1683025909
+::res://src/graphics/::1683900945
+StarryBackground.gd::GDScript::-1::1683370956::0::1::::<>Node2D<>::
+::res://src/interface/::1683900897
 GameMenu.tscn::PackedScene::188310893913659474::1683025909::0::1::::<><>::
-::res://src/playing scene/::1683027188
 PlayingScene.gd::GDScript::-1::1683027188::0::1::::<>Scene<>::
-PlayingScene.tscn::PackedScene::3107748768729471763::1683027140::0::1::::<><>::res://src/playing scene/PlayingScene.gd
-::res://src/srart menu/::1683369267
+PlayingScene.tscn::PackedScene::-1::1683900890::0::1::::<><>::res://src/interface/PlayingScene.gd
 StartMenu.gd::GDScript::-1::1683369267::0::1::::<>Scene<>::
-StartMenu.tscn::PackedScene::5029234740292169330::1683369250::0::1::::<><>::res://src/srart menu/StartMenu.gd<>uid://baundevtepdit
-::res://src/starry background/::1683369578
-StarryBackground.gd::GDScript::-1::1683369578::0::1::::<>Node2D<>::
-StarryBackground.tscn::PackedScene::2428503160465480327::1683369578::0::1::::<><>::res://src/starry background/StarryBackground.gd
+StartMenu.tscn::PackedScene::-1::1683900895::0::1::::<><>::res://src/interface/StartMenu.gd<>uid://baundevtepdit
+::res://src/starry background/::1683900945
+StarryBackground.tscn::PackedScene::-1::1683900945::0::1::::<><>::res://src/graphics/StarryBackground.gd
