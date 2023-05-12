@@ -10,6 +10,16 @@
 
 ## 更新日志
 
+### 2023-05-12
+
+对文件系统做了修改
+
+分为：assets、sources两个文件夹
+
+sources下分为：graphics、interface、logic、modification、utilities
+
+未来也许会实现模组（modification）
+
 ### 2023-05-06
 
 StarryBackground因为有问题，所以换了一个设计思路，但是还是有问题，先搁置一下
