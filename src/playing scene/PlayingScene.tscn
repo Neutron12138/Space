@@ -1,6 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://bkjofyn45rgqt"]
-
-[ext_resource type="Script" path="res://src/playing scene/PlayingScene.gd" id="1_okdom"]
-
-[node name="Playing Scene" type="Node"]
-script = ExtResource("1_okdom")
