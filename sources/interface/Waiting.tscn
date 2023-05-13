@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://da1ujag34dt6q"]
+
+[node name="Waiting" type="Node"]
+
+[node name="HUD" type="CanvasLayer" parent="."]
+
+[node name="label" type="Label" parent="HUD"]
+offset_left = 300.0
+offset_top = 20.0
+offset_right = 900.0
+offset_bottom = 620.0
+theme_override_font_sizes/font_size = 100
+text = "TEXT_WAITING"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
