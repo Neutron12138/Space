@@ -3,9 +3,11 @@ extends Node
 
 const SETTINGS_FILE_PATH : String = "user://settings.json"
 const SETTINGS_LANGUAGE : String = "language"
+const SETTINGS_ENABLE_MODS : String = "enable_mods"
 
 var settings : Dictionary = {
 	SETTINGS_LANGUAGE :TranslationServer.get_locale(),
+	SETTINGS_ENABLE_MODS : false,
 }
 
 func reload() -> void:
