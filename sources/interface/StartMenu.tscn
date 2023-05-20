@@ -13,33 +13,72 @@ visible = false
 
 [node name="title" type="Label" parent="HUD"]
 offset_right = 1200.0
-offset_bottom = 320.0
+offset_bottom = 200.0
 theme_override_font_sizes/font_size = 100
 text = "TEXT_STARTMENU_TITLE"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="buttons" type="VBoxContainer" parent="HUD"]
-offset_left = 300.0
-offset_top = 320.0
-offset_right = 900.0
-offset_bottom = 620.0
+[node name="buttons" type="HBoxContainer" parent="HUD"]
+offset_left = 100.0
+offset_top = 250.0
+offset_right = 1100.0
+offset_bottom = 550.0
 
-[node name="start" type="Button" parent="HUD/buttons"]
+[node name="sub" type="VBoxContainer" parent="HUD/buttons"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.5
+
+[node name="mods" type="Button" parent="HUD/buttons/sub"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "TEXT_STARTMENU_MODS"
+
+[node name="test" type="Button" parent="HUD/buttons/sub"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "TEXT_STARTMENU_TEST"
+
+[node name="main" type="VBoxContainer" parent="HUD/buttons"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="start" type="Button" parent="HUD/buttons/main"]
 layout_mode = 2
 size_flags_vertical = 3
 text = "TEXT_STARTMENU_START"
 
-[node name="settings" type="Button" parent="HUD/buttons"]
+[node name="settings" type="Button" parent="HUD/buttons/main"]
 layout_mode = 2
 size_flags_vertical = 3
 text = "TEXT_STARTMENU_SETTINGS"
 
-[node name="exit" type="Button" parent="HUD/buttons"]
+[node name="exit" type="Button" parent="HUD/buttons/main"]
 layout_mode = 2
 size_flags_vertical = 3
 text = "TEXT_STARTMENU_EXIT"
 
-[connection signal="pressed" from="HUD/buttons/start" to="." method="_on_start_pressed"]
-[connection signal="pressed" from="HUD/buttons/settings" to="." method="_on_settings_pressed"]
-[connection signal="pressed" from="HUD/buttons/exit" to="." method="_on_exit_pressed"]
+[node name="others" type="VBoxContainer" parent="HUD/buttons"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.5
+
+[node name="more" type="Button" parent="HUD/buttons/others"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "TEXT_STARTMENU_MORE"
+
+[node name="about" type="Button" parent="HUD/buttons/others"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "TEXT_STARTMENU_ABOUT"
+
+[connection signal="pressed" from="HUD/buttons/sub/mods" to="." method="_on_mods_pressed"]
+[connection signal="pressed" from="HUD/buttons/sub/test" to="." method="_on_test_pressed"]
+[connection signal="pressed" from="HUD/buttons/main/start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="HUD/buttons/main/settings" to="." method="_on_settings_pressed"]
+[connection signal="pressed" from="HUD/buttons/main/exit" to="." method="_on_exit_pressed"]
+[connection signal="pressed" from="HUD/buttons/others/more" to="." method="_on_more_pressed"]
+[connection signal="pressed" from="HUD/buttons/others/about" to="." method="_on_about_pressed"]

@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://b5deu7fbkbfoq"]
+
+[ext_resource type="Script" path="res://sources/interface/More.gd" id="1_n20wg"]
+
+[node name="More" type="Node"]
+script = ExtResource("1_n20wg")

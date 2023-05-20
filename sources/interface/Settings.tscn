@@ -4,3 +4,40 @@
 
 [node name="Settings" type="Node"]
 script = ExtResource("1_jvo41")
+
+[node name="HUD" type="CanvasLayer" parent="."]
+
+[node name="title" type="Label" parent="HUD"]
+offset_right = 1200.0
+offset_bottom = 100.0
+theme_override_font_sizes/font_size = 50
+text = "TEXT_SETTINGS_TITLE"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="container" type="ScrollContainer" parent="HUD"]
+offset_top = 100.0
+offset_right = 1200.0
+offset_bottom = 600.0
+
+[node name="settings" type="VBoxContainer" parent="HUD/container"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="language" type="HBoxContainer" parent="HUD/container/settings"]
+layout_mode = 2
+
+[node name="title" type="Label" parent="HUD/container/settings/language"]
+layout_mode = 2
+text = "TEXT_SETTINGS_LANGUAGE"
+
+[node name="options" type="OptionButton" parent="HUD/container/settings/language"]
+layout_mode = 2
+item_count = 2
+popup/item_0/text = "TEXT_SETTINGS_LANG_EN"
+popup/item_0/id = 0
+popup/item_1/text = "TEXT_SETTINGS_LANG_ZH"
+popup/item_1/id = 1
+
+[connection signal="item_selected" from="HUD/container/settings/language/options" to="." method="_on_options_item_selected"]

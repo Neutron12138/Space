@@ -1,6 +1,5 @@
-extends Scene
+extends Node
 
 func _process(delta):
-	m_path = "res://sources/interface/StartMenu.tscn"
-	check_escape()
-	change_scene()	
+	if Input.is_action_pressed("escape"):
+		get_tree().change_scene_to_file("res://sources/interface/StartMenu.tscn")
