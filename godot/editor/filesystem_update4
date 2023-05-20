@@ -1,2 +1,3 @@
-res://sources/interface/StartMenu.tscn
-res://sources/interface/StartMenu.gd
+res://sources/interface/About.tscn
+res://assets/shaders/transparent.gdshader
+res://sources/interface/IconBackground.tscn
