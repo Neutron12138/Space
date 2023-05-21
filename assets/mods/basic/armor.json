@@ -1,0 +1,16 @@
+{
+    "name": "armor",
+    "icon": null,
+    "price": 500,
+    "health": 500,
+    "factor": [
+        {
+            "type": "solid_bullet",
+            "factor": 1.0
+        },
+        {
+            "type": "laser",
+            "factor": 1.0
+        }
+    ]
+}

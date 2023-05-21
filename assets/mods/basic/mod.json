@@ -1,8 +1,10 @@
 {
-    "author" : "Diamond",
-    "version" : "pre-alpha",
-    "package" : "diamond.basic",
-    "data" : {
-        "gun" : "res://assets/mods/basic/gun.json"
+    "author": "Diamond",
+    "version": "pre-alpha",
+    "package": "diamond.basic",
+    "data": {
+        "gun": "res://assets/mods/basic/gun.json",
+        "ship": "res://assets/mods/basic/ship.json",
+        "armor": "res://assets/mods/basic/armor.json"
     }
 }

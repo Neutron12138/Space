@@ -1,0 +1,44 @@
+{
+    "name": "ship",
+    "icon": null,
+    "price": 1000,
+    "frame": {
+        "health": 1000,
+        "factor": [
+            {
+                "type": "solid_bullet",
+                "factor": 1.0
+            },
+            {
+                "type": "laser",
+                "factor": 1.0
+            }
+        ]
+    },
+    "slot": {
+        "0": {
+            "position": [
+                0,
+                0
+            ],
+            "type": "any",
+            "content": "gun"
+        },
+        "1": {
+            "position": [
+                0,
+                0
+            ],
+            "type": "any",
+            "content": "armor"
+        },
+        "2": {
+            "position": [
+                0,
+                0
+            ],
+            "type": "any",
+            "content": "armor"
+        }
+    }
+}
