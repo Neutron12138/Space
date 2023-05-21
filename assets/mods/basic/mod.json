@@ -1,0 +1,8 @@
+{
+    "author" : "Diamond",
+    "version" : "pre-alpha",
+    "package" : "diamond.basic",
+    "data" : {
+        "gun" : "res://assets/mods/basic/gun.json"
+    }
+}

@@ -1,6 +1,25 @@
 {
-	"name" : "gun",
-	"price" : 666,
-	"armor" : 123,
-	"attack" : 321,
+	"name": "gun",
+	"icon": null,
+	"price": 666,
+	"armor": {
+		"health": 123,
+		"factor": [
+			{
+				"type": "solid_bullet",
+				"factor": 1.0
+			},
+			{
+				"type": "laser",
+				"factor": 1.0
+			}
+		]
+	},
+	"attack": [
+		{
+			"type": "laser",
+			"damage": 321,
+			"cool_down": 1
+		}
+	]
 }
