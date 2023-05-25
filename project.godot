@@ -40,7 +40,7 @@ escape={
 
 [internationalization]
 
-locale/translations=PackedStringArray("res://assets/translations/start menu/translations.en.translation", "res://assets/translations/start menu/translations.zh.translation", "res://assets/translations/about/translations.en.translation", "res://assets/translations/about/translations.zh.translation", "res://assets/translations/global/translations.en.translation", "res://assets/translations/global/translations.ch.translation", "res://assets/translations/settings/translations.en.translation", "res://assets/translations/settings/translations.zh.translation")
+locale/translations=PackedStringArray("res://assets/translations/start menu/translations.en.translation", "res://assets/translations/start menu/translations.zh.translation", "res://assets/translations/about/translations.en.translation", "res://assets/translations/about/translations.zh.translation", "res://assets/translations/global/translations.en.translation", "res://assets/translations/global/translations.ch.translation", "res://assets/translations/settings/translations.en.translation", "res://assets/translations/settings/translations.zh.translation", "res://assets/translations/error/translations.en.translation", "res://assets/translations/error/translations.zh.translation")
 
 [rendering]
 

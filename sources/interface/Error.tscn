@@ -1,0 +1,33 @@
+[gd_scene load_steps=2 format=3 uid="uid://dbugeif6cl2eb"]
+
+[ext_resource type="Script" path="res://sources/interface/Error.gd" id="1_utytm"]
+
+[node name="Error" type="Node"]
+script = ExtResource("1_utytm")
+
+[node name="HUD" type="CanvasLayer" parent="."]
+
+[node name="title" type="Label" parent="HUD"]
+offset_right = 1200.0
+offset_bottom = 100.0
+theme_override_font_sizes/font_size = 50
+text = "TEXT_ERROR_TITLE"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="container" type="VBoxContainer" parent="HUD"]
+offset_top = 100.0
+offset_right = 1200.0
+offset_bottom = 600.0
+
+[node name="scroll" type="ScrollContainer" parent="HUD/container"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 4.0
+
+[node name="content" type="Label" parent="HUD/container/scroll"]
+layout_mode = 2
+
+[node name="buttons" type="HBoxContainer" parent="HUD/container"]
+layout_mode = 2
+size_flags_vertical = 3

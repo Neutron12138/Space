@@ -15,14 +15,21 @@ func as_dictionary() -> Dictionary:
 	}
 	
 func load_from_dictionary(dict : Dictionary) -> void:
-	if MODDATA_NAME in dict:
-		weapon_name = str(dict[MODDATA_NAME])
-		
-	if MODDATA_PRICE in dict:
-		weapon_price = int(dict[MODDATA_PRICE])
-	
-	if MODDATA_ARMOR in dict:
-		weapon_armor = int(dict[MODDATA_ARMOR])
-	
-	if MODDATA_ATTACK in dict:
-		weapon_attack = int(dict[MODDATA_ATTACK])
+	for key in dict:
+		var value = dict[key]
+		if value == null:
+			continue
+		else:
+			match key:
+				MODDATA_NAME:
+					weapon_name = str(value)
+				MODDATA_PRICE:
+					if typeof(value) == TYPE_INT:
+						weapon_price = int(value)
+					else:
+						Global.report_error(
+							Utils_ErrorInfo.make(
+								"Type error parsing \"\", integer required",
+								[]
+							)
+						)
