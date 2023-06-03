@@ -2,7 +2,7 @@ extends Node
 
 var settings : Logic_Settings = Logic_Settings.new()
 var error_info : Utils_ErrorInfo = Utils_ErrorInfo.new()
-
+var log : Utils_Log = Utils_Log.new()
 
 func _ready() -> void:
 	settings.reload()
@@ -18,6 +18,8 @@ func _ready() -> void:
 	)
 	print(weapon.as_dictionary())
 	display_error()
+	
+	log.logd("good")
 	
 func display_error() -> void:
 	get_tree().change_scene_to_file(
