@@ -6,10 +6,10 @@ uid="uid://but0tyip2pqol"
 
 [deps]
 
-files=["res://assets/translations/global/translations.en.translation", "res://assets/translations/global/translations.ch.translation"]
+files=["res://assets/translations/global/translations.en.translation", "res://assets/translations/global/translations.zh_CN.translation"]
 
 source_file="res://assets/translations/global/translations.csv"
-dest_files=["res://assets/translations/global/translations.en.translation", "res://assets/translations/global/translations.ch.translation"]
+dest_files=["res://assets/translations/global/translations.en.translation", "res://assets/translations/global/translations.zh_CN.translation"]
 
 [params]
 

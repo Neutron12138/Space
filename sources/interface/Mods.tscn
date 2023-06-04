@@ -2,5 +2,5 @@
 
 [ext_resource type="Script" path="res://sources/interface/Mods.gd" id="1_xye1e"]
 
-[node name="Mods" type="Node"]
+[node name="Mods" type="VBoxContainer"]
 script = ExtResource("1_xye1e")

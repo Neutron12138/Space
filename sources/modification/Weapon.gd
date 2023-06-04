@@ -27,9 +27,6 @@ func load_from_dictionary(dict : Dictionary) -> void:
 					if typeof(value) == TYPE_INT:
 						weapon_price = int(value)
 					else:
-						Global.report_error(
-							Utils_ErrorInfo.make(
-								"Type error parsing \"\", integer required",
-								[]
-							)
+						Global.logger.loge(
+							"Type error parsing \"\", integer required"
 						)

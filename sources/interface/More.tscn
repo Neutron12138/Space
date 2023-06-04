@@ -2,5 +2,5 @@
 
 [ext_resource type="Script" path="res://sources/interface/More.gd" id="1_n20wg"]
 
-[node name="More" type="Node"]
+[node name="More" type="VBoxContainer"]
 script = ExtResource("1_n20wg")

@@ -3,13 +3,13 @@ extends Node
 const LANGUAGES = ["en","zh_CN"]
 
 func _ready():
-	$HUD/container/settings/language/options.selected = LANGUAGES.find(
+	$container/settings/language/options.selected = LANGUAGES.find(
 		Global.settings.settings[
 			Logic_Settings.SETTINGS_LANGUAGE
 		]
 	)
 	
-	$HUD/container/settings/enable_mods/enable.button_pressed = Global.settings.settings[
+	$container/settings/enable_mods/enable.button_pressed = Global.settings.settings[
 		Logic_Settings.SETTINGS_ENABLE_MODS
 	]
 
