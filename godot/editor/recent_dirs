@@ -1,9 +1,13 @@
+res://sources
+res://sources/interface
+res://assets/translations/start menu
+res://assets/translations/settings
+res://assets/translations/global
+res://assets/translations/error
+res://assets/translations/about
+E:/Godot/project/Space/assets/mods/basic
+res://sources/modification
 E:/Godot/project/Space/.export
 res://assets/images
 res://assets/shaders
 res://assets
-res://assets/translations/settings
-res://assets/translations/global
-res://assets/translations/about
-res://sources
-res://assets/translations/start menu

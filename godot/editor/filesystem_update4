@@ -1,3 +1,9 @@
-res://sources/interface/About.tscn
-res://assets/shaders/transparent.gdshader
-res://sources/interface/IconBackground.tscn
+res://sources/Main.tscn
+res://sources/Classes.gd
+res://sources/utilities/Logger.gd
+res://sources/logic/Settings.gd
+res://sources/modification/Modification.gd
+res://sources/modification/Weapon.gd
+res://sources/plugin/Plugin.gd
+res://sources/Global.gd
+res://sources/interface/Settings.gd
