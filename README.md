@@ -10,6 +10,20 @@
 
 ## 更新日志
 
+### 2023-06-09
+
+做了较大改动
+
+用preload()把原本需要class_name的类包装起来
+
+增加了Classes单例，行为类似于namespace
+
+之后几乎不会出现class_name，而是用Classes+preload()代替
+
+但不会为资源添加类似Classes的Resources单例，因为把资源全部加载需要大量内存
+
+但Resources依然会出现，仅加载部分资源
+
 ### 2023-06-03
 
 做了些修改
