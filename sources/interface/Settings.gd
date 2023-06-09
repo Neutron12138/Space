@@ -5,12 +5,12 @@ const LANGUAGES = ["en","zh_CN"]
 func _ready():
 	$container/settings/language/options.selected = LANGUAGES.find(
 		Global.settings.settings[
-			Logic_Settings.SETTINGS_LANGUAGE
+			Classes.logic.Settings.SETTINGS_LANGUAGE
 		]
 	)
 	
 	$container/settings/enable_mods/enable.button_pressed = Global.settings.settings[
-		Logic_Settings.SETTINGS_ENABLE_MODS
+		Classes.logic.Settings.SETTINGS_ENABLE_MODS
 	]
 
 func _process(delta):
@@ -19,12 +19,12 @@ func _process(delta):
 
 func _on_options_item_selected(index):
 	Global.settings.settings[
-		Logic_Settings.SETTINGS_LANGUAGE
+		Classes.logic.Settings.SETTINGS_LANGUAGE
 	] = LANGUAGES[index]
 	Global.settings.save_changes()
 
 func _on_check_button_toggled(button_pressed):
 	Global.settings.settings[
-		Logic_Settings.SETTINGS_ENABLE_MODS
+		Classes.logic.Settings.SETTINGS_ENABLE_MODS
 	] = button_pressed
 	Global.settings.save_changes()

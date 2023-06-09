@@ -22,6 +22,7 @@ config/icon="res://assets/images/icon.png"
 Global="*res://sources/Global.gd"
 Constants="*res://sources/Constants.gd"
 Main="*res://sources/Main.tscn"
+Classes="*res://sources/Classes.gd"
 
 [display]
 

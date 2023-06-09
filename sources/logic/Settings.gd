@@ -1,4 +1,3 @@
-class_name  Logic_Settings
 extends Node
 
 const SETTINGS_FILE_PATH : String = "user://settings.json"

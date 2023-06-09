@@ -1,4 +1,3 @@
-class_name Mod_Modification
 extends Node
 
 const MOD_AUTHOR : String = "author"

@@ -1,4 +1,3 @@
-class_name Utils_Logger
 extends Node
 
 enum Level { UNKNOWN,DEBUG,INFO,WARNING,ERROR }
@@ -29,7 +28,7 @@ func add_log(level : Level,content : String) -> void:
 	}
 	
 	_logs.append(item)
-	_file.store_string(format_item(item))
+	#_file.store_string(format_item(item))
 
 func flush():
 	_file.flush()

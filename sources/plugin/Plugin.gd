@@ -1,4 +1,3 @@
-class_name Plugin_Plugin
 extends Node
 
 var _object : Node = null

@@ -1,5 +1,4 @@
-class_name Mod_Weapon
-extends Mod_Modification
+extends "Modification.gd"
 
 @export var weapon_name : String = ""
 @export var weapon_price : int = 0
