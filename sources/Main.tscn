@@ -1,41 +1,8 @@
-[gd_scene load_steps=9 format=3 uid="uid://poi60atct6us"]
+[gd_scene load_steps=2 format=3 uid="uid://poi60atct6us"]
 
 [ext_resource type="Script" path="res://sources/Main.gd" id="1_oesa5"]
-[ext_resource type="PackedScene" uid="uid://ckvgin2rnbog3" path="res://sources/interface/StartMenu.tscn" id="2_gsrxs"]
-[ext_resource type="PackedScene" uid="uid://d33p35a3kg1hl" path="res://sources/interface/GameSelecting.tscn" id="3_qhbxf"]
-[ext_resource type="PackedScene" uid="uid://s11bwp3txg3c" path="res://sources/interface/Settings.tscn" id="4_1b4yw"]
-[ext_resource type="PackedScene" uid="uid://bcdl2rtyj4d4t" path="res://sources/interface/Mods.tscn" id="5_ttt3h"]
-[ext_resource type="PackedScene" uid="uid://d27fwaerhftuf" path="res://sources/interface/TestSelecting.tscn" id="6_btfc4"]
-[ext_resource type="PackedScene" uid="uid://b5deu7fbkbfoq" path="res://sources/interface/More.tscn" id="7_f478j"]
-[ext_resource type="PackedScene" uid="uid://c2hrqxeg5yk7t" path="res://sources/interface/About.tscn" id="8_bq1j1"]
 
 [node name="Main" type="Control"]
 layout_mode = 3
 anchors_preset = 0
 script = ExtResource("1_oesa5")
-
-[node name="start_menu" parent="." instance=ExtResource("2_gsrxs")]
-visible = false
-
-[node name="game_selecting" parent="." instance=ExtResource("3_qhbxf")]
-visible = false
-layout_mode = 0
-
-[node name="settings" parent="." instance=ExtResource("4_1b4yw")]
-visible = false
-layout_mode = 0
-
-[node name="mods" parent="." instance=ExtResource("5_ttt3h")]
-visible = false
-layout_mode = 0
-
-[node name="test_selecting" parent="." instance=ExtResource("6_btfc4")]
-visible = false
-layout_mode = 0
-
-[node name="more" parent="." instance=ExtResource("7_f478j")]
-visible = false
-layout_mode = 0
-
-[node name="about" parent="." instance=ExtResource("8_bq1j1")]
-visible = false

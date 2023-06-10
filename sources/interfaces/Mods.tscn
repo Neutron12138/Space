@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://bcdl2rtyj4d4t"]
+
+[ext_resource type="Script" path="res://sources/interfaces/Mods.gd" id="1_xye1e"]
+
+[node name="Mods" type="VBoxContainer"]
+script = ExtResource("1_xye1e")

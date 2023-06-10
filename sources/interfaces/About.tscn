@@ -1,0 +1,44 @@
+[gd_scene load_steps=4 format=3 uid="uid://c2hrqxeg5yk7t"]
+
+[ext_resource type="Script" path="res://sources/interfaces/About.gd" id="1_5xbdl"]
+[ext_resource type="PackedScene" uid="uid://qf1mr0rd8vj2" path="res://sources/interfaces/KeyValueDisplay.tscn" id="2_wqbav"]
+[ext_resource type="PackedScene" uid="uid://dn20fbppbxp3j" path="res://sources/interfaces/IconBackground.tscn" id="2_xq7fm"]
+
+[node name="About" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_5xbdl")
+
+[node name="IconBackground" parent="." instance=ExtResource("2_xq7fm")]
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_right = 1200.0
+offset_bottom = 600.0
+
+[node name="title" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 6
+theme_override_font_sizes/font_size = 50
+text = "TEXT_ABOUT_TITLE"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="container" type="VBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 5.0
+
+[node name="author" parent="VBoxContainer/container" instance=ExtResource("2_wqbav")]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 3
+key = "TEXT_ABOUT_AUTHOR_STR"
+value = "TEXT_ABOUT_AUTHOR"
+
+[node name="version" parent="VBoxContainer/container" instance=ExtResource("2_wqbav")]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 3
+key = "TEXT_ABOUT_VERSION_STR"
+value = "TEXT_ABOUT_VERSION"

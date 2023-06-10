@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://qf1mr0rd8vj2"]
+
+[ext_resource type="Script" path="res://sources/interfaces/KeyValueDisplay.gd" id="1_bkb60"]
+
+[node name="KeyValueDisplay" type="HBoxContainer"]
+script = ExtResource("1_bkb60")
+
+[node name="key" type="Label" parent="."]
+layout_mode = 2
+
+[node name="colon" type="Label" parent="."]
+layout_mode = 2
+text = "TEXT_GLOBAL_COLON"
+
+[node name="value" type="Label" parent="."]
+layout_mode = 2

@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://d27fwaerhftuf"]
+
+[ext_resource type="Script" path="res://sources/interfaces/TestSelecting.gd" id="1_oe1pg"]
+
+[node name="TestSelecting" type="VBoxContainer"]
+script = ExtResource("1_oe1pg")
